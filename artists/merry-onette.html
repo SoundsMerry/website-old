@@ -143,9 +143,8 @@ div.desc {
 
 /* Parallax Artist Image */
 .parallax { 
-  /* The image used */
   background-image: url("merry-onette/mo002.jpg");
-  height: 700px; 
+  height: 550px; 
   /* scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -155,9 +154,7 @@ div.desc {
 
 /* Parallax Texture Image */
 .parallax2 { 
-  /* The image used */
-  background-image: url("merry-onette/mo002.jpg");
-  height: 700px; 
+  background-image: url("merry-onette/bkg1.png");
   /* scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -174,6 +171,48 @@ div.desc {
     background-attachment: scroll;
   }
 }
+
+/* Featured Album */
+.artist-name {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.album-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.catalog {
+  font-size: 16px;
+  color: rgb(182, 182, 182);
+  text-align: left;
+}
+
+.album-cover {
+  max-width: 50%;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  height: auto;
+}
+
+.album-details {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.pad-top {
+  padding-top: 15px;
+}
+
 
 </style>
 
@@ -228,7 +267,7 @@ div.desc {
             <!-- Parallax Artist Image-->
             <div class="parallax"></div>
             
-            <!-- Artist Description-->
+            <!-- Artist Description -->
             <div class="pad" style="font-size:18px">
                 <p>The music and art project, Merry Onette, was one born of loss. It was created by artist Onette, just
                     weeks after the unexpected death of her father, in early May 2011. It can be said with confidence that this new
@@ -248,6 +287,25 @@ div.desc {
                     scored Robin Sandiford's sci-fi short film Apple. A series of limited edition surrealist landscape paintings
                     were released in 2017. The first full length Merry Onette album is also in production with the date to be announced.</p>
             </div>
+
+            <!-- Latest Release -->
+            <div class="w3-row parallax2">
+              <div class="w3-container w3-half">
+                <div class="artist-name">Merry Onette</div>
+                <div class="album-title">In Concrète Minor EP</div>
+                <div class="catalog">SM001 | SM001CD</div>
+                <img src="merry-onette/album-icm.jpg" class="album-cover"></img>
+              </div>
+              <div class="w3-container w3-half">
+                <div class="album-details pad-top">00:00:00</div>
+                <div class="album-details">MP3, WAV, FLAC, CD</div>
+                <div class="album-details">12/13/14</div>
+                <iframe class="pad-top"
+                  src="https://bandcamp.com/EmbeddedPlayer/album=535110295/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/"
+                  style="border: 0; width: 100%; height: 400px;" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+              </div>
+            </div>
+
 
                       <div class="clearfix"></div>
 
