@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<title>Sounds Merry ● Video</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logos/favicon.png" type="image/gif">
+
+    <!-- for Google -->
+    <meta name="description"
+        content="Official website for independent record label Sounds Merry. Home to Merry Onette & Summi Mors." />
+    <meta name="keywords" content="Sounds Merry,Experimental Music,Record Label,Merry Onette,Summi Mors" />
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="Sounds Merry" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://soundsmerry.com" />
+    <meta property="og:description"
+        content="Official website for independent record label Sounds Merry. Home to Merry Onette & Summi Mors." />
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sounds Merry" />
+    <meta name="twitter:description"
+        content="Official website for independent record label Sounds Merry. Home to Merry Onette & Summi Mors." />
+    <meta name="twitter:image" content="" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    .img-logo {
+        padding: 5px;
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+
+    /* full image background */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/bkg/white-bkg.png");
+        min-height: 100%;
+    }
+
+    /* Tiled image background */
+    .bgimg-2 {
+        background-position: center;
+        background-image: url("");
+        background-repeat: repeat;
+    }
+
+    .w3-bar .w3-button {
+        padding: 10px;
+    }
+
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    @media (min-width:768px) {
+        .container {
+            width: 640px
+        }
+    }
+
+    @media (min-width:992px) {
+        .container {
+            width: 854px
+        }
+    }
+
+    @media (min-width:1200px) {
+        .container {
+            width: 1024px
+        }
+    }
+
+    .embed-responsive {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        overflow: hidden
+    }
+
+    .embed-responsive .embed-responsive-item,
+    .embed-responsive embed,
+    .embed-responsive iframe,
+    .embed-responsive object,
+    .embed-responsive video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0
+    }
+
+    .embed-responsive-16by9 {
+        padding-bottom: 56.25%
+    }
+
+    .embed-responsive-4by3 {
+        padding-bottom: 75%
+    }
+</style>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+
+            <!-- Left logo -->
+            <div class="w3-left">
+                <a href="index.html" class="w3-bar-item w3-wide"><img width="148"
+                        src="logos/sm-logo-3.png"></a>
+            </div>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="index.html" class="w3-bar-item w3-button">LATEST</a>
+                <a href="artists.html" class="w3-bar-item w3-button">ARTISTS</a>
+                <a href="releases.html" class="w3-bar-item w3-button">RELEASES</a>
+                <a href="https://soundsmerry.storenvy.com/" target="_blank" class="w3-bar-item w3-button">SHOP</a>
+                <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">LATEST</a>
+        <a href="artists.html" onclick="w3_close()" class="w3-bar-item w3-button">ARTISTS</a>
+        <a href="releases.html" onclick="w3_close()" class="w3-bar-item w3-button">RELEASES</a>
+        <a href="https://soundsmerry.storenvy.com/" target="_blank" onclick="w3_close()"
+            class="w3-bar-item w3-button">SHOP</a>
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+
+    <!-- Header with Video Gallery -->
+    <header class="w3-display-container w3-grayscale-min" id="top"><br><br>
+
+        <div class="container">
+            <h3>Music Videos</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/videoseries?list=PLUUTqYwlrD-SIL65TtB1926nAi34nHoBA"></iframe>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h3>Album Teasers</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/videoseries?list=PLUUTqYwlrD-Rjcb6xsBO_k3hVOb63j4yy"></iframe>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h3>Official Audio</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/videoseries?list=PLUUTqYwlrD-Se0wluJzl2DTNxb6XYs_Mn"></iframe>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h3>Collaborations</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/videoseries?list=PLUUTqYwlrD-SBqD8_IkHjMa5_Z8ovP83f"></iframe>
+            </div>
+        </div>
+
+        <br><br>
+
+    </header>
+
+
+
+    <!-- Footer -->
+    <footer class="w3-card w3-center w3-white w3-padding-16">
+        <div class="w3-row">
+            <div class="w3-center w3-col w3-container m4 l4 w3-padding-16">
+                <a href="news.html" class="w3-bar-item w3-button">NEWS</a>
+                <a href="video.html" class="w3-bar-item w3-button">VIDEO</a>
+                <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            <div class="w3-col w3-container m4 l4">
+                <a href="#top" class="w3-center w3-button w3-light-grey"><i class="fa fa-arrow-up"></i></a>
+            </div>
+            <div class="w3-center w3-col w3-container m4 l4">
+                <p>&copy;
+                    <script>new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());</script> SOUNDS
+                    MERRY.</p>
+                <div class="w3-center w3-xlarge w3-section">
+                    <a href="https://www.facebook.com/soundsmerry/" target="_blank"><i
+                            class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="https://twitter.com/soundsmerry" target="_blank"><i
+                            class="fa fa-twitter w3-hover-opacity"></i></a>
+                    <a href="https://www.youtube.com/channel/UCVrU0XCedZFGKth21AQIyeg" target="_blank"><i
+                            class="fa fa-youtube-square w3-hover-opacity"></i></a>
+                    <a href="https://soundsmerry.bandcamp.com/" target="_blank"><i
+                            class="fa fa-bandcamp w3-hover-opacity"></i></a>
+                    <a href="https://open.spotify.com/user/soundsmerry" target="_blank"><i
+                            class="fa fa-spotify w3-hover-opacity"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+
+</html>
