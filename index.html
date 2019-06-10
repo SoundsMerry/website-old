@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Sounds Merry</title>
+<title>Sounds Merry ● Official Website</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,11 @@
   color: white;
 }   
 
-    /* Full height image header */
+ div.relative {
+  position: static;
+ }
+
+    /* full image background */
     .bgimg-1 {
         background-position: center;
         background-size: cover;
@@ -55,16 +59,34 @@
         min-height: 100%;
     }
 
-    /* Tiled image footer */
+    /* Tiled image background */
     .bgimg-2 {
         background-position: center;
-        background-image: url("https://github.com/SoundsMerry/website/blob/master/logos/inflicted-dark1.png?raw=true");
+        background-image: url("");
         background-repeat: repeat;
     }
 
     .w3-bar .w3-button {
         padding: 10px;
     }
+
+
+ /* Content & Header Position Size */
+ #page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 15rem;    /* content height */
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 
 </style>
 
@@ -75,7 +97,7 @@
 
             <!-- Left logo -->
             <div class="w3-left">
-                <a href="index.html" class="w3-bar-item w3-button w3-wide"><img width="148"
+                <a href="index.html" class="w3-bar-item w3-wide"><img width="148"
                         src="logos/sm-logo-3.png"></a>
             </div>
             <!-- Right-sided navbar links -->
@@ -110,6 +132,8 @@
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="top">
+        <div id="page-container">
+                <div id="content-wrap">
     <div class="w3-display-left w3-text-white" style="padding:48px"><br>
         <span class="w3-jumbo w3-hide-small w3-hide-medium">Summi Mors <i>II</i> Out Now!</span><br>
         <span class="w3-xxlarge w3-hide-large w3-hide-small">Summi Mors <i>II</i> Out Now!</span><br>
@@ -118,14 +142,14 @@
         or Purchase</a></p>
     </div> 
   </header>
-
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-white w3-card w3-padding-16">
-    <div class="w3-row">
+    <div class="w3-row relative">
         <div class="w3-center w3-col w3-container m4 l4 w3-padding-16">
                 <a href="news.html" class="w3-bar-item w3-button">NEWS</a>
-                <a href="licensing.html" class="w3-bar-item w3-button">LICENSING</a>
+                <a href="video.html" class="w3-bar-item w3-button">VIDEO</a>
                 <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
                 <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
         </div>
@@ -150,7 +174,7 @@
     </div>
 </footer>
 
-
+</div>
 
     <script>
         // Modal Image Gallery
